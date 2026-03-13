@@ -1,4 +1,4 @@
-Rebuild Fitness  Web Design Document
+Rebuild Fitness  Web Design Document https://konoa13.github.io/rebuild-fitness/
 Adam Konopka
 
 Project Overview
