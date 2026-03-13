@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rebuild – Transform Your Body</title>
+
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+
+<nav>
+    <div class="logo">REBUILD</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+
+    <!-- CTA button visible on desktop -->
+    <button class="nav-cta" onclick="goTo('contact')">Book Free Call</button>
+
+    <!-- Hamburger icon shown only on mobile -->
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+
+<section id="home">
+    <div class="hero-inner fade">
+        <div class="hero-label">Personal Training &amp; Nutrition</div>
+        <h1>Transform<br/><span>Your Body.</span></h1>
+        <p class="hero-sub">
+            Custom workout programs and meal plans built around your goals — not someone else's.
+        </p>
+        <button class="btn-main" onclick="goTo('contact')">Start Your Journey &rarr;</button>
+    </div>
+</section>
+
+
+
+<section id="services">
+
+    <!-- Section heading -->
+    <div class="fade">
+        <div class="section-label">What We Offer</div>
+        <div class="section-title">Our Programs</div>
+    </div>
+
+    <!-- Service cards grid -->
+    <div class="cards">
+
+        <!-- Card 1: Workout Plan -->
+        <div class="card fade">
+            <div class="card-icon">🏋️</div>
+            <h3>Custom Workout Plan</h3>
+            <p>A personalized training program built around your goals, schedule, and fitness level — beginner or advanced.</p>
+        </div>
+
+        <!-- Card 2: Meal Plan -->
+        <div class="card fade">
+            <div class="card-icon">🥗</div>
+            <h3>Personal Meal Plan</h3>
+            <p>A detailed nutrition guide tailored to your calorie needs, food preferences, and body composition goals.</p>
+        </div>
+
+        <!-- Card 3: Full Package -->
+        <div class="card fade">
+            <div class="card-icon">⚡</div>
+            <h3>Full Transformation</h3>
+            <p>The complete package — workout plan, meal plan, and ongoing check-ins to keep you on track and progressing.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<
+<section id="contact">
+    <div class="contact-wrap">
+
+        <!-- Section heading -->
+        <div class="fade">
+            <div class="section-label">Get Started</div>
+            <div class="section-title">Book a <span class="gradient-text">Free Call</span></div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="form fade" id="form" onsubmit="submitForm(event)">
+
+            <!-- First and last name row -->
+            <div class="row">
+                <div class="field" id="f-fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="John"/>
+                    <span class="err">Required</span>
+                </div>
+                <div class="field" id="f-lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Smith"/>
+                    <span class="err">Required</span>
+                </div>
+            </div>
+
+            <!-- Email field -->
+            <div class="field" id="f-email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@email.com"/>
+                <span class="err">Enter a valid email</span>
+            </div>
+
+            <!-- Goal dropdown -->
+            <div class="field">
+                <label for="goal">Goal</label>
+                <select id="goal">
+                    <option value="">Select your goal...</option>
+                    <option>Lose Weight</option>
+                    <option>Build Muscle</option>
+                    <option>Improve Fitness</option>
+                </select>
+            </div>
+
+            <!-- Optional message -->
+            <div class="field">
+                <label for="msg">Message (optional)</label>
+                <textarea id="msg" placeholder="Any questions or details about yourself..."></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn-main btn-full">Send Message</button>
+
+            <!-- Success message shown after valid submission -->
+            <div class="success-msg" id="successMsg">
+                ✅ Got it! We'll reach out within 24 hours.
+            </div>
+
+        </form>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="footer-logo">REBUILD</div>
+    <p>&copy; 2025 Rebuild Fitness. All rights reserved.</p>
+</footer>
+
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
