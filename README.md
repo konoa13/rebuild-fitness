@@ -1,4 +1,4 @@
-Rebuild Fitness 
+Rebuild Fitness  Web Design Document
 Adam Konopka
 
 Project Overview
@@ -196,4 +196,24 @@ Hover effects show users what they can click on
 Form validation stops people from sending an empty or broken form and tells them what to fix
 The mobile menu makes the site easy to use on a phone
 
+
+Technical Overview
+
+index.html Holds all the text and structure of the website
+
+style.cssControls how everything looks like colors, fonts, layout, mobile design
+
+script.js  Makes the site interactive like menus, animations, form checking
+
+Timeline / Project Milestones
+
+day 1 Answered all the planning questions and decided on the business idea, colors, and layout
+
+day 2 Built the HTML navbar, hero section, service cards, contact form, footer
+
+day 3 Wrote the CSS colors, fonts, spacing, hover effects, mobile layout
+
+day 4 Added JavaScript buttons, mobile menu, scroll animation
+
+day 5 upload everything to github
 
